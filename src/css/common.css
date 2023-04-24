@@ -16,3 +16,27 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/*1*/
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.buttons button,
+ button[type = "submit"] 
+ {
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-right: 10px;
+  border: 0;
+  background-color: #2196f3;
+  color: #ffffff;
+  padding: 7px 15px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
