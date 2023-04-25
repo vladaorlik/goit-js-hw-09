@@ -3,8 +3,6 @@ import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
-
-
 const inputEl = document.querySelector("#datetime-picker");
 console.log("🚀 ~ file: 02-timer.js:5 ~ inputEl", inputEl)
 const timerBtn = document.querySelector('[data-start]');
@@ -15,7 +13,6 @@ const secondsEl = document.querySelector(`[data-seconds]`);
 let timerId = null;
 
 timerBtn.setAttribute('disabled', 'true');
-
 
 const options = {
     enableTime: true,
@@ -48,7 +45,6 @@ timerBtn.addEventListener(`click`, setTimerOnBtnClick);
 function setTimerOnBtnClick () {
   timerBtn.setAttribute('disabled', 'true');
   
-  
   timerId = setInterval(()=> {
     const delta = options.defaultDate - Date.now() ;
     if (delta < 1000) {
@@ -59,9 +55,7 @@ function setTimerOnBtnClick () {
   }, 1000);
   }
   
-
   function updateMarkup ({days, hours, minutes, seconds}) {
-    // daysEl.textContent = addLeadingZero(days);
     if (days.toString().length >= 2) {
       daysEl.textContent = days.toString();
     } else {

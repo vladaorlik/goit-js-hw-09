@@ -17,7 +17,7 @@ img {
   max-width: 100%;
 }
 
-/* стилі 1 завдання */
+/* 1 */
 
 .buttons {
   display: flex;
@@ -46,7 +46,7 @@ button[type = "submit"] {
   font-size: 20px;
 }
 
-/* стилі таймеру */
+/* 2 */
 
 input {
   font: inherit;
@@ -123,7 +123,7 @@ input + button:disabled,
   background-color: #188ae888;
 }
 
-/* стилі промісів */
+/* 3 */
 .form {
   padding: 20px;
   font-family: inherit;
@@ -132,8 +132,5 @@ input + button:disabled,
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 200px;
-  
-
-  
+  max-width: 200px; 
 }
